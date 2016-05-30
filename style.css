@@ -1,9 +1,87 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+.content {
+	padding: 0 0.938rem;
+	margin: 0 auto;
+	min-width: 37.5rem;
+}
 /**=========NAVIGATION SECTION=========**/
 .top-vavigation {
 	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	border-bottom: 1px solid #DDD;
 }
 .top-navigation > .content {
-	width: 970px;
 	height: 70px;
-	margin: 0 auto;
+}
+.logo {
+	height: 70px;
+}
+.links {
+	float: right;
+	font-family: 'Robot', sans-serif;
+	font-size: 16px;
+	color: #838994;
+	letter-spacing: 0.03em;
+	margin-top: 1.7em;
+	-webkit-font-smoothing: antialiased;
+}
+.links > li {
+	display: inline-block;
+	margin-left: 1.563rem;
+}
+.active {
+	color: #4c5058;
+	font-weight: 600;
+}
+li:hover {
+	cursor: pointer;
+    color: #333333;
+}
+/**===============INTRODUCTIN SECTION======================**/
+.introduction {
+	background-image: url("karma.jpg");
+	background-position: center bottom;
+	background-repeat: none;
+	background-size: cover;
+	height: 45.938em;
+	overflow: auto;
+}
+h1, h3 {
+	color: white;
+	text-align: center;
+	font-weight: 300;
+}
+h1 {
+	margin-top: 17.5rem;
+	font-size: 3em;
+}
+h3 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+}
+/**==================BUTTON=================================**/
+.buttons {
+	text-align: center;
+	margin-top: 1.563rem;
+}
+button {
+	width: 10rem;
+	background-color: #F15A29;
+	border-color: #F15A29;
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 1rem 1.5rem;
+	font-size: 1.125rem;
+	color: white;
+}
+button:hover {
+	cursor: pointer;
+	background-color: #EA440E;
 }
